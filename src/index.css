@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root > .container {
+  flex-grow: 1;
+}
+
+.search-divs {
+  border: 10px solid whitesmoke;
+}
+
+/* width */
+.search-divs::-webkit-scrollbar {
+  width: 0;
+}
+
+input {
+  outline: none;
+}
+
+a.nav-header.active {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: 'Inter', 'sans-serif';
+}
+
+a.nav-header.active,
+a.nav-sidebar.active {
+  color: red;
+}
+
+svg.heart-icon {
+  color: #7777773b;
+}
+
+svg.heart-icon.active,
+svg.heart-icon:hover {
+  color: #DB4444;
+}
+
+.heart-icon:hover {
+  transition: .3s;
+  color: #e1292a;
+}
+
+.minus {
+  border-radius: 7px 0 0 7px;
+}
+
+.plus {
+  border-radius: 0 7px 7px 0;
+}
+
+.nums button.active {
+  color: #DB4444;
+}
+
+ul.description {
+  list-style: inside;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.categories,
+.abouting {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+
+

@@ -1,0 +1,738 @@
+{
+  "users": [],
+  "user": {},
+  "products": [
+    {
+      "phones": [
+        {
+          "id": 1,
+          "title": "Samsung Galaxy A54",
+          "cat": "phones",
+          "counter": 1,
+          "price": "13299",
+          "saleBool": true,
+          "sale": "30",
+          "description": [
+            "BODY Dimensions: 158.2 x 76.7 x 8.2 mm (6.23 x 3.02 x 0.32 in)",
+            "DISPLAY Type: Super AMOLED, 120Hz, HDR10+, 1000 nits (HBM)",
+            "PLATFORM OS: Android 13, One UI 5.1",
+            "BATTERY Type: Li-Po 5000 mAh, non-removable"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg"
+              ]
+            },
+            {
+              "#fff": [
+                "1-white.jpg",
+                "2-white.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Nokia G21",
+          "cat": "phones",
+          "counter": 1,
+          "price": "4099",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Fast, efficient processing power and a long battery to take you through the weekend",
+            "With 2× more security updates than the competiton², all your data is safe",
+            "Beautiful camera module detailing with glass like effect for an all new up to date look"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#336073": [
+                "1-blue.jpg",
+                "2-blue.jpg",
+                "3-blue.jpg",
+                "4-blue.jpg"
+              ]
+            },
+            {
+              "#808080": [
+                "1-gray.jpg",
+                "2-gray.jpg",
+                "3-gray.jpg",
+                "4-gray.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Samsung Galaxy A04e",
+          "cat": "phones",
+          "counter": 1,
+          "price": "3950",
+          "saleBool": true,
+          "sale": "25",
+          "description": [
+            "BODY Dimensions: 164.2 x 75.9 x 9.1 mm (6.46 x 2.99 x 0.36 in)",
+            "DISPLAY Type: PLS LCD",
+            "PLATFORM: Android 12, One UI Core 4.1",
+            "MEMORY Internal: 32GB 3GB RAM",
+            "BATTERY Type: Li-Ion 5000 mAh, non-removable"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg"
+              ]
+            },
+            {
+              "#afc6f7": [
+                "1-blue.jpg"
+              ]
+            },
+            {
+              "#ffc0cb": [
+                "1-pink.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Samsung Galaxy S23",
+          "cat": "phones",
+          "counter": 1,
+          "price": "24999",
+          "saleBool": true,
+          "sale": "35",
+          "description": [
+            "Brand: Samsung",
+            "Cellular technology: 5G",
+            "Model name: Galaxy S23 FE",
+            "Operating system: Android"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#fffdd0": [
+                "1-cream.jpg",
+                "2-cream.jpg",
+                "3-cream.jpg"
+              ]
+            },
+            {
+              "#41424C": [
+                "1-graphite.jpg",
+                "2-graphite.jpg",
+                "3-graphite.jpg"
+              ]
+            },
+            {
+              "#3EB489": [
+                "1-mint.jpg",
+                "2-mint.jpg",
+                "3-mint.jpg"
+              ]
+            },
+            {
+              "#800080": [
+                "1-purple.jpg",
+                "2-purple.jpg",
+                "3-purple.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Samsung Galaxy A04",
+          "cat": "phones",
+          "counter": 1,
+          "price": "4940",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Body Dimensions: 164.4 x 76.3 x 9.1 mm (6.47 x 3.00 x 0.36 in)",
+            "Display Type: PLS LCD",
+            "Platform: Android 12, upgradable to Android 13, One UI Core 5.0",
+            "Internal Memory: 64GB",
+            "No Adaptor Included"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg"
+              ]
+            },
+            {
+              "#fff": [
+                "1-white.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Xiaomi Redmi 10",
+          "cat": "phones",
+          "counter": 1,
+          "price": "5444",
+          "saleBool": true,
+          "sale": "40",
+          "description": [
+            "AI quad camera | 90Hz FHD+ display , 5000mAh battery , Gaming CPU , fast charging",
+            "Weight: 181g",
+            "Helio G88 processor,Octa-Core ,12nm manufacturing process Dimensions:161.95mm x 75.53mm x 8.92mm",
+            "Main camera : 50MP",
+            "Front camera : 8MP"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#808080": [
+                "1-gray.jpg",
+                "2-gray.jpg",
+                "3-gray.jpg"
+              ]
+            },
+            {
+              "#fff": [
+                "1-white.jpg",
+                "2-white.jpg",
+                "3-white.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Samsung Galaxy M34",
+          "cat": "phones",
+          "counter": 1,
+          "price": "9999",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "DISPLAY Type: Super AMOLED, 120Hz, 1000 nits (peak)",
+            "DISPLAY Size: 6.5 inches, 103.7 cm2 (~83.1% screen-to-body ratio)",
+            "MAIN CAMERA: Triple 50 MP, f/1.8, (wide), PDAF, OIS - 8 MP, f/2.2, 120˚ (ultrawide) - 2 MP, f/2.4",
+            "FEATURES: Sensors Fingerprint (side-mounted), accelerometer, gyro, compass",
+            "BATTERY Type: Li-Po 6000 mAh, non-removable"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#8ebdc7": [
+                "1-green.jpg",
+                "2-green.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "iPhone 14",
+          "cat": "phones",
+          "counter": 1,
+          "price": "60000",
+          "saleBool": true,
+          "sale": "10",
+          "description": [
+            "DISPLAY Type: Super AMOLED, 120Hz, 1000 nits (peak)",
+            "DISPLAY Size: 6.5 inches, 103.7 cm2 (~83.1% screen-to-body ratio)",
+            "MAIN CAMERA: Triple 50 MP, f/1.8, (wide), PDAF, OIS - 8 MP, f/2.2, 120˚ (ultrawide) - 2 MP, f/2.4",
+            "FEATURES: Sensors Fingerprint (side-mounted), accelerometer, gyro, compass",
+            "BATTERY Type: Li-Po 6000 mAh, non-removable"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#72697a": [
+                "1-pink.jpg",
+                "2-pink.jpg",
+                "3-pink.jpg",
+                "4-pink.jpg"
+              ]
+            },
+            {
+              "#131f28": [
+                "1-green.jpg",
+                "2-green.jpg",
+                "3-green.jpg"
+              ]
+            },
+            {
+              "#9eb7cb": [
+                "1-blue.jpg",
+                "2-blue.jpg",
+                "3-blue.jpg"
+              ]
+            }
+          ]
+        }
+      ],
+      "computers": [
+        {
+          "id": 1,
+          "title": "HP Laptop 15S-EQ1001NE",
+          "cat": "computers",
+          "counter": 1,
+          "price": "11499",
+          "saleBool": true,
+          "sale": "20",
+          "description": [
+            "Core i3",
+            "4GB RAM",
+            "3.2 GHz speed",
+            "Graphics card intel",
+            "15.6 LCD screen"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Dell OptiPlex 3000 Tower Desktop",
+          "cat": "computers",
+          "counter": 1,
+          "price": "22620",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Dell OptiPlex 3000 Tower Desktop - 12th Intel Core i5-12500 6-Cores, 8GB DDR4 RAM, 512GB PCIe NVMe SSD, Wired Keyboard-KB216 Optical Mouse-MS116, 8x DVD/-RW 9.5mm Slimline Optical Disk Drive, UBUNTU",
+            "Display Size: 0 inches",
+            "Computer memory Size: 8 GB",
+            "Cpu model Model number: i5-12500"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Dell Vostro 3510 laptop",
+          "cat": "computers",
+          "counter": 1,
+          "price": "18400",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Dell OptiPlex 3000 Tower Desktop - 12th Intel Core i5-12500 6-Cores, 8GB DDR4 RAM, 512GB PCIe NVMe SSD, Wired Keyboard-KB216 Optical Mouse-MS116, 8x DVD/-RW 9.5mm Slimline Optical Disk Drive, UBUNTU",
+            "Good Quality",
+            "Perfect Material",
+            "Easy to use",
+            "Unique and fashionable design"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg",
+                "5-black.jpg",
+                "6-black.jpg",
+                "7-black.jpg",
+                "8-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Dell All in one, Gaming 12 Gen,Intel Core i7, 16GB Ram , 512 HDD, Nge 3050 4GlUB",
+          "cat": "computers",
+          "counter": 1,
+          "price": "42259",
+          "saleBool": true,
+          "sale": "30",
+          "description": [
+            "inte Core i7",
+            "16GB Ram , 512 HDD",
+            "Nge 3050 4GlUB"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "XUM Titan Gaming PC",
+          "cat": "computers",
+          "counter": 1,
+          "price": "15500",
+          "saleBool": true,
+          "sale": "10",
+          "description": [
+            "Processor: AMD Ryzen 5 5500",
+            "Max. Boost Clock Up To: 4.4 Ghz",
+            "Graphics: Nvidia GeForce RTX 3060 12GB",
+            "Memory Frequency: 3200MHz",
+            "Warranty: 1 Year Parts and Labour"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "2FR Gaming Computer PC Desktop",
+          "cat": "computers",
+          "counter": 1,
+          "price": "19500",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Intel Core i5-10400F Processor 12M Cache, up to 4.30 GHz",
+            "Nvidia GeForce RTX 2060 6GB GDDR6 - Dual FAN",
+            "16GB DDR4 3200Mz (8GB x 2 Dual Channel) Memory",
+            "250GB NVME M.2 SSD Boot Drive + 1TB HDD Data Drive",
+            "750 Watts 80+ Bronze Rated ARGB Power Supply",
+            "120MM x 6 ARGB Case Fans - Tuned and Tweaked for maximum airflow and silent operation",
+            "LED Strip + CPU Cooler + Fans LEDs are Controlled and Synced by LED Button on case"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        }
+      ],
+      "smartWatch": [
+        {
+          "id": 1,
+          "title": "Samsung Galaxy Watch6 Smartwatch",
+          "cat": "smartWatch",
+          "counter": 1,
+          "price": "12100",
+          "saleBool": true,
+          "sale": "10",
+          "description": [
+            "Sleep tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habits.",
+            "Body composition: Measure your body composition with Samsung BioActive sensor, Monitor your body to set detailed and personalised fitness goals.",
+            "Heart monitoring: Regular heart monitoring and alerts for any irregularities.",
+            "Expanded screen: View, swipe and scroll on an expansive screen with less bezel.",
+            "Personalise watch faces: Choose from a wide array of options and personalise your watch face with unique designs, custom dashboards and photos.",
+            "Galaxy Ecosystem: Expand your Galaxy experience and get more out of your Samsung watch with seamless interaction of Galaxy products to increase your productivity."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#f4f3e8": [
+                "1-gold.jpg",
+                "2-gold.jpg",
+                "3-gold.jpg",
+                "4-gold.jpg"
+              ]
+            },
+            {
+              "#d1d4d7": [
+                "1-silver.jpg",
+                "2-silver.jpg",
+                "3-silver.jpg",
+                "4-silver.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Samsung SM-R900NZDAMEA Galaxy Watch5",
+          "cat": "smartWatch",
+          "counter": 1,
+          "price": "9899",
+          "saleBool": true,
+          "sale": "20",
+          "description": [
+            "Brand: Samsung",
+            "Sapphire Crystal",
+            "3-in-1 Bioactive sensor",
+            "Water Resistant",
+            "Display size: 40 Millimeters"
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#f4e4de": [
+                "1-pink.jpg",
+                "2-pink.jpg"
+              ]
+            },
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Samsung Galaxy Watch6 Classic Smartwatch",
+          "cat": "smartWatch",
+          "counter": 1,
+          "price": "16999",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Connectivity: Find your way to your destination with GPS on your Samsung smart watch, Your turn-by-turn guide, For hikers, cyclist and all outdoor enthusiasts.",
+            "Sleep Tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habit.",
+            "Fitness: With personalised HR Zone and heart rate sensors you can optimise your performance and reach new goals. Track your heart rate during and after cardio-focused workouts and exercises",
+            "Rotating Bezel: The rotating bezel enables an easy selection of the different functions and apps on your android smart watch.",
+            "Personalise watch faces: Choose from a wide array of options and personalise your watch face with unique designs, custom dashboards and photos.",
+            "Galaxy Ecosystem: Expand your Galaxy experience and get more out of your Samsung watch with seamless interaction of Galaxy products to increase your productivity."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#cacdd0": [
+                "1-silver.jpg",
+                "2-silver.jpg",
+                "3-silver.jpg",
+                "4-silver.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Xiaomi Redmi Smart Watch 3",
+          "cat": "smartWatch",
+          "counter": 1,
+          "price": "2300",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "JBL",
+            "Brand: Generic",
+            "[Comfortable Fit] - The ergonomic, stick-closed design of the JBL Wave Beam fits so comfortably you may forget you’re wearing them. The closed design excludes external sounds, enhancing the bass performance.",
+            "[Up to 32 (8h + 24h) Total Hours of Battery Life with Speed Charging] - With 8 hours of battery life in the earbuds and 24 in the case, the JBL Wave Beam provide all-day audio. And when you need more power, you can speed charge an extra two hours in just 10 minutes.",
+            "[Stay Aware of your Surrounding] - Go anywhere and hear everything with Smart Ambient technology. When you need to pause for a quick chat, TalkThru lets you instantly hear yourself and those around you without taking out your earbuds. Or use Ambient Aware to keep the music playing while remaining aware of your surroundings."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#f1eadf": [
+                "1-silver.jpg",
+                "2-silver.jpg",
+                "3-silver.jpg",
+                "4-silver.jpg"
+              ]
+            }
+          ]
+        }
+      ],
+      "camera": [
+        {
+          "id": 1,
+          "title": "Canon - EOS R100 4K Video",
+          "cat": "camera",
+          "counter": 1,
+          "price": "20000",
+          "saleBool": true,
+          "sale": "10",
+          "description": [
+            "Sleep tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habits.",
+            "Body composition: Measure your body composition with Samsung BioActive sensor, Monitor your body to set detailed and personalised fitness goals.",
+            "Heart monitoring: Regular heart monitoring and alerts for any irregularities."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Canon - EOS Rebel T7 DSLR Video",
+          "cat": "camera",
+          "counter": 1,
+          "price": "40000",
+          "saleBool": true,
+          "sale": "15",
+          "description": [
+            "Sleep tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habits.",
+            "Body composition: Measure your body composition with Samsung BioActive sensor, Monitor your body to set detailed and personalised fitness goals.",
+            "Heart monitoring: Regular heart monitoring and alerts for any irregularities."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        }
+      ],
+      "headPhones": [
+        {
+          "id": 1,
+          "title": "Solo³ The Beats Icon",
+          "cat": "headPhones",
+          "counter": 1,
+          "price": "5000",
+          "saleBool": true,
+          "sale": "5",
+          "description": [
+            "Sleep tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habits.",
+            "Body composition: Measure your body composition with Samsung BioActive sensor, Monitor your body to set detailed and personalised fitness goals.",
+            "Heart monitoring: Regular heart monitoring and alerts for any irregularities."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Apple - AirPods Max",
+          "cat": "headPhones",
+          "counter": 1,
+          "price": "8000",
+          "saleBool": false,
+          "sale": "0",
+          "description": [
+            "Sleep tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habits.",
+            "Body composition: Measure your body composition with Samsung BioActive sensor, Monitor your body to set detailed and personalised fitness goals.",
+            "Heart monitoring: Regular heart monitoring and alerts for any irregularities."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#7e7e7e": [
+                "1-gray.jpg",
+                "2-gray.jpg",
+                "3-gray.jpg"
+              ]
+            },
+            {
+              "#3d7198": [
+                "1-blue.jpg",
+                "2-blue.jpg",
+                "3-blue.jpg"
+              ]
+            },
+            {
+              "#aac7a9": [
+                "1-green.jpg",
+                "2-green.jpg",
+                "3-green.jpg"
+              ]
+            },
+            {
+              "#e0e2e1": [
+                "1-white.jpg",
+                "2-white.jpg",
+                "3-white.jpg"
+              ]
+            }
+          ]
+        }
+      ],
+      "gamming": [
+        {
+          "id": 1,
+          "title": "Sony - PlayStation 5 - DualSense Wireless Controller - White",
+          "cat": "gamming",
+          "counter": 1,
+          "price": "4000",
+          "saleBool": true,
+          "sale": "5",
+          "description": [
+            "Sleep tracking: Get to know your sleep with this Samsung Galaxy smart watch and its advanced sleep tracker, Understand your sleeping patterns and stages (awake, light, deep REM), Get sleep coaching for healthy sleep habits.",
+            "Body composition: Measure your body composition with Samsung BioActive sensor, Monitor your body to set detailed and personalised fitness goals.",
+            "Heart monitoring: Regular heart monitoring and alerts for any irregularities."
+          ],
+          "mainPhoto": "main-photo.jpg",
+          "colors": [
+            {
+              "#dadee6": [
+                "1-white.jpg",
+                "2-white.jpg",
+                "3-white.jpg",
+                "4-white.jpg"
+              ]
+            },
+            {
+              "#000": [
+                "1-black.jpg",
+                "2-black.jpg",
+                "3-black.jpg",
+                "4-black.jpg"
+              ]
+            },
+            {
+              "#8c8f9e": [
+                "1-gray.jpg",
+                "2-gray.jpg",
+                "3-gray.jpg",
+                "4-gray.jpg"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
