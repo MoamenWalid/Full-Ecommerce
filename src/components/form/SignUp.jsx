@@ -43,7 +43,9 @@ const SignUp = () => {
     onSubmit: (values, formikHelper) => {
       FetchingApi('signUp', 'http://localhost:3005/users', 'POST', values, formikHelper, setLoading, setError);
     },
-  });  
+  }); 
+  
+  console.log(formik);
 
   function handleEyePassword() {
     if (!refPassword.current !== true) {

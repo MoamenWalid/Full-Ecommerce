@@ -6,7 +6,7 @@ import parse from 'html-react-parser';
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
+
 const Search = ({ show }) => {
   const [productsSearch, setProductsSearch] = useState([]);
   const ref = useRef();
