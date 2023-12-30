@@ -26,3 +26,5 @@
   cd .\JSON-Server\
   npm start
   ```
+
+![Image showing the output of the program](/Readme-Photos/home.png)
