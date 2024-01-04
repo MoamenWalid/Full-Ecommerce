@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import withReactContent from "sweetalert2-react-content";
 import Swal from "sweetalert2";
 import Categories from "../home/Categories";
+import urlFetching from "../../../url/url";
 
 const ProductBuying = () => {
   const param = useParams();
@@ -23,7 +24,7 @@ const ProductBuying = () => {
   const dispatch = useDispatch();
   
   useEffect(() => {
-    axios('http://localhost:3005/products').then(({ data }) => {
+    axios(urlFetching(`products`)).then(({ data }) => {
       const found = data[0][param.cat].find(item => item.id == param.id);
       const defaultColors = Object.values(found.colors[0])[0].map(src => `/imgs/Products/${found.title}/${src}`);
       setProduct(found);
@@ -34,7 +35,7 @@ const ProductBuying = () => {
 
   useEffect(() => {
     if (Object.keys(product).length && userId) {
-      axios(`http://localhost:3005/users/${userId}`).then(({ data }) => {
+      axios(urlFetching(`users/${userId}`)).then(({ data }) => {
         dispatch(updateProductsUser(data.wishlist));
         dispatch(updateCart(data.cart));
 

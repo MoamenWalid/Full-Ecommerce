@@ -5,6 +5,7 @@ import axios from "axios";
 import parse from 'html-react-parser';
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import urlFetching from "../../../url/url";
 
 
 const Search = ({ show }) => {
@@ -15,7 +16,7 @@ const Search = ({ show }) => {
 
   async function onChangeFunc() {
     setProductsSearch([]);
-    const { data } = await axios.get('http://localhost:3005/products');
+    const { data } = await axios.get(urlFetching('products'));
     for(const key in data[0]) {
       data[0][key].map(item => item.title.toLowerCase().includes(ref.current.value.toLowerCase().trim()) ? setProductsSearch(prev => [...prev, item]) : false);
     }

@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { cartProducts, updateCart, updateProductsUser, wishlistProducts } from '../store/slices/userSlice';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import urlFetching from '../url/url';
 
 
 const Product = ({ item, img, sale, title, beforeSale, afterSale }) => {
@@ -20,7 +21,7 @@ const Product = ({ item, img, sale, title, beforeSale, afterSale }) => {
 
   useEffect(() => {
     if (userId) {
-      axios(`http://localhost:3005/users/${userId}`).then(({ data }) => {
+      axios(urlFetching(`users/${userId}`)).then(({ data }) => {
         dispatch(updateProductsUser(data.wishlist));
         dispatch(updateCart(data.cart));
 

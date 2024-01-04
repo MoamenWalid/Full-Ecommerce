@@ -13,6 +13,7 @@ import Loading from "../Loading";
 import Error from "../Error";
 import { userLogging } from "../../store/slices/userSlice";
 import { useDispatch } from "react-redux";
+import urlFetching from "../../url/url";
 
 const logInSchema =  Yup.object().shape({
   emailUser: Yup.string().email('Invalid email').required('Required'),
@@ -36,7 +37,7 @@ const LogIn = () => {
     },
     validationSchema: logInSchema,
     onSubmit: (values, formikHelper) => {
-      FetchingApi('logIn', 'http://localhost:3005/users', 'POST', values, formikHelper, setLoading, setError);
+      FetchingApi('logIn', urlFetching('users'), 'POST', values, formikHelper, setLoading, setError);
     },
   });
 

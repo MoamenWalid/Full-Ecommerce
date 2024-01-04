@@ -12,6 +12,7 @@ import Loading from '../Loading.jsx';
 import Error from '../Error.jsx';
 import { useDispatch } from 'react-redux';
 import { userLogging } from '../../store/slices/userSlice.js';
+import urlFetching from '../../url/url.js';
 
 const signUpSchema =  Yup.object().shape({
   nameUser: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!').required('Required'),
@@ -41,12 +42,10 @@ const SignUp = () => {
     },
     validationSchema: signUpSchema,
     onSubmit: (values, formikHelper) => {
-      FetchingApi('signUp', 'http://localhost:3005/users', 'POST', values, formikHelper, setLoading, setError);
+      FetchingApi('signUp', urlFetching('users'), 'POST', values, formikHelper, setLoading, setError);
     },
   }); 
   
-  console.log(formik);
-
   function handleEyePassword() {
     if (!refPassword.current !== true) {
       refPassword.current.type = refPassword.current.type == 'password' ? 'text' : 'password';

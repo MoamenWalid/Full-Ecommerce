@@ -1,5 +1,6 @@
 
 import axios from 'axios';
+import urlFetching from '../../url/url';
 
 // eslint-disable-next-line no-unused-vars
 const FetchingApi = (status, url, method, body, formikHelper, setLoading, setError) => {
@@ -21,7 +22,7 @@ const FetchingApi = (status, url, method, body, formikHelper, setLoading, setErr
         if (!found) {
           axios({url, method, data: {...body, wishlist: [], cart: []}});
           setLoadingTime();
-          axios.post('http://localhost:3005/user', {...body, id: data.length + 1});
+          axios.post(urlFetching('user'), {...body, id: data.length + 1});
         } 
         
         else formikHelper.setFieldError('emailUser', 'Email is already in use!');
@@ -32,7 +33,7 @@ const FetchingApi = (status, url, method, body, formikHelper, setLoading, setErr
         else if (found.passwordUser !== body.passwordUser) formikHelper.setFieldError('passwordUser', 'Wrong password. Try again or click Forgot password to reset it.');
         else {
           setLoadingTime();
-          axios.post('http://localhost:3005/user', {nameUser: found.nameUser, emailUser: found.emailUser, passwordUser: found.passwordUser, id: found.id});
+          axios.post(urlFetching('user'), {nameUser: found.nameUser, emailUser: found.emailUser, passwordUser: found.passwordUser, id: found.id});
         }
       }
     }).catch(error => {

@@ -12,6 +12,7 @@ import { removeUser, updateAccount, updateUser } from '../../../store/slices/use
 import { useDispatch } from 'react-redux';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
+import urlFetching from '../../../url/url';
 
 const editAccountSchema =  Yup.object().shape({
   nameUser: Yup.string().min(2, 'Too Short!').max(50, 'Too Long!').required('Required'),
@@ -49,14 +50,14 @@ const EditAccount = ({ userId, name, email, password }) => {
     },
     validationSchema: editAccountSchema,
     onSubmit: (values, formikHelper) => {
-      axios.get('http://localhost:3005/users').then(({ data }) => {
+      axios.get(urlFetching(`users`)).then(({ data }) => {
         const found = data.findIndex(user => user.emailUser == values.emailUser && user.id !== userId);
         if (found >= 0) formikHelper.setFieldError('emailUser', 'Exist this email. Try another one');
         else if (refCurrentPassword.current.value !== password) formikHelper.setFieldError('currentPassword', 'Wrong password');
         else if (refConfirmPassword.current.value !== refNewPassword.current.value) formikHelper.setFieldError('confirmPassword', 'Wrong confirm password. Please check first.');
         else {
           const newData = { nameUser: values.nameUser, emailUser: values.emailUser, passwordUser: values.newPassword };
-          dispatch(updateAccount(newData)).then(({ payload }) => axios.put(`http://localhost:3005/users/${userId}`, payload));
+          dispatch(updateAccount(newData)).then(({ payload }) => axios.put(urlFetching(`users/${userId}`), payload));
           dispatch(updateUser(newData));
           Swal.fire({
             title: "Good Jop!",

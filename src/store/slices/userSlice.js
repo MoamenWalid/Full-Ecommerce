@@ -1,9 +1,10 @@
 import { createAsyncThunk, createSlice, current } from "@reduxjs/toolkit";
 import axios from "axios";
+import urlFetching from "../../url/url";
 
 export const userLogging = createAsyncThunk('userSlice/userLogging', async(_, { rejectWithValue }) => {
   try {
-    const { data } = await axios({url: 'http://localhost:3005/user', method: 'GET'});
+    const { data } = await axios({url: urlFetching(`user`), method: 'GET'});
     return data;
 
   } catch (error) {
@@ -22,7 +23,7 @@ export const wishlistProducts = createAsyncThunk('userSlice/wishlist', async(dat
 
 export const updateAccount = createAsyncThunk('userSlick/updateAccount', async(DATA, { rejectWithValue, getState }) => {
   try {
-    const { data } = await axios.get(`http://localhost:3005/users/${getState().user.userId}`);
+    const { data } = await axios.get(urlFetching(`users/${getState().user.userId}`));
     return {...DATA, wishlist: [...data.wishlist], cart: [...data.cart]};
 
   } catch (error) {
@@ -41,7 +42,7 @@ export const cartProducts = createAsyncThunk('userSlice/cartProducts', async(dat
 
 export const byType = createAsyncThunk('userSlice/byType', async(cat, { rejectWithValue }) => {
   try {
-    const { data } = await axios.get('http://localhost:3005/products');
+    const { data } = await axios.get(urlFetching(`products`));
     return { data, cat };
 
   } catch (error) {
@@ -67,22 +68,22 @@ const userSlice = createSlice({
         const itemIndex = current(state).cartProductsUser.findIndex(element => element.title == action.payload.item.title);
         if (itemIndex >= 0 && action.payload.counter <= 0) state.cartProductsUser.splice(itemIndex, 1);
         else if (itemIndex >= 0 && action.payload.counter > 0) state.cartProductsUser[itemIndex].counter = action.payload.counter;
-        axios({url: `http://localhost:3005/users/${state.userId}`, method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
+        axios({url: urlFetching(`users/${state.userId}`), method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
       }
     },
     removeCartItem(state, action) {
       const itemIndex = current(state).cartProductsUser.findIndex(element => element.title == action.payload.title);
       state.cartProductsUser.splice(itemIndex, 1);
-      axios({url: `http://localhost:3005/users/${state.userId}`, method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
+      axios({url: urlFetching(`users/${state.userId}`), method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
     },
     removeUser(state) {
       state.user = {};
       state.userId = 0;
-      axios.post('http://localhost:3005/user', {});
+      axios.post(urlFetching(`user`), {});
     },
     updateUser(state, action) {
       state.user = action.payload;
-      axios.post('http://localhost:3005/user', {...action.payload, id: state.userId});
+      axios.post(urlFetching(`user`), {...action.payload, id: state.userId});
     }
   },
 
@@ -95,13 +96,13 @@ const userSlice = createSlice({
     builder.addCase(wishlistProducts.fulfilled, (state, action) => {
       const itemIndexWishlist = current(state).productsUser.findIndex(element => element.title == action.payload.title);
       itemIndexWishlist >= 0 ? state.productsUser.splice(itemIndexWishlist, 1) : state.productsUser.push(action.payload);
-      axios({url: `http://localhost:3005/users/${state.userId}`, method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
+      axios({url: urlFetching(`users/${state.userId}`), method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
     }) 
 
     builder.addCase(cartProducts.fulfilled, (state, action) => {
       const itemIndexCart = current(state).cartProductsUser.findIndex(element => element.title == action.payload.title);
       if (itemIndexCart < 0) state.cartProductsUser.push(action.payload);
-      axios({url: `http://localhost:3005/users/${state.userId}`, method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
+      axios({url: urlFetching(`users/${state.userId}`), method: 'PUT', data: {...state.user, wishlist: [...state.productsUser], cart: [...state.cartProductsUser]}});
     })
 
     builder.addCase(byType.fulfilled, (state, action) => {

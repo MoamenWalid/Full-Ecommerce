@@ -8,6 +8,7 @@ import axios from "axios";
 import { removeCartItem, updateCart, updateProductsUser } from "../../../store/slices/userSlice";
 import { Link } from "react-router-dom";
 import Categories from "../home/Categories";
+import urlFetching from "../../../url/url";
 
 const Cart = () => {
   const { userId, cartProductsUser } = useSelector(state => state.user);
@@ -15,7 +16,7 @@ const Cart = () => {
 
   useEffect(() => {
     if (userId) {
-      axios(`http://localhost:3005/users/${userId}`).then(({ data }) => {
+      axios(urlFetching(`users/${userId}`)).then(({ data }) => {
       if (data.cart) dispatch(updateCart(data.cart));
       if (data.wishlist) dispatch(updateProductsUser(data.wishlist));
     })
