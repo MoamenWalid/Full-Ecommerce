@@ -88,13 +88,13 @@ const EditAccount = ({ userId, name, email, password }) => {
         <div className='flex items-start flex-wrap justify-between gap-3'>
           <div className='flex flex-col grow gap-1'>
             <label className='font-inter font-medium' htmlFor="nameField">Name</label>
-            <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} type='text' className="py-2 px-3 bg-secondary rounded" id='nameField' placeholder='Name' name='nameUser' value={formik.values.nameUser} />
+            <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} type='text' className="py-2 px-3 style-glass rounded" id='nameField' placeholder='Name' name='nameUser' value={formik.values.nameUser} />
             <span className='text-red-500 font-inter font-medium'>{formik.touched.nameUser && formik.errors.nameUser ? formik.errors.nameUser : null}</span>
           </div>
 
           <div className='flex flex-col grow gap-1'>
             <label className='font-inter font-medium' htmlFor="emailField">Email</label>
-            <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} type='text' className="py-2 px-3 bg-secondary rounded" id='emailField' placeholder='Email' name='emailUser' value={formik.values.emailUser} />
+            <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} type='text' className="py-2 px-3 style-glass rounded" id='emailField' placeholder='Email' name='emailUser' value={formik.values.emailUser} />
             <span className='text-red-500 font-inter font-medium'>{formik.touched.emailUser && formik.errors.emailUser ? formik.errors.emailUser : null}</span>
           </div>
         </div>
@@ -102,19 +102,19 @@ const EditAccount = ({ userId, name, email, password }) => {
         <div className="password-changes">
           <p className='text-[16px] py-2 font-normal'>Password Changes</p>
           <div className="passwords flex flex-col gap-3">
-            <div className='bg-secondary rounded overflow-hidden flex items-center justify-between py-2 px-4'>
+            <div className='style-glass rounded overflow-hidden flex items-center justify-between py-2 px-4'>
               <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} refelement={refCurrentPassword} className='bg-transparent grow' type='password'  placeholder='Current Passwod' name='currentPassword' />
               <FontAwesomeIcon onClick={() => handleEyePassword(refCurrentPassword)} icon= {eyeStatusCurrent == 'faEye' ? faEye : faEyeSlash} className="text-dark cursor-pointer w-[25px] h-[25px]" />
             </div>
             <span className='text-red-500 font-inter font-medium'>{formik.touched.currentPassword && formik.errors.currentPassword ? formik.errors.currentPassword : null}</span>
 
-            <div className='bg-secondary rounded overflow-hidden flex items-center justify-between py-2 px-4'>
+            <div className='style-glass rounded overflow-hidden flex items-center justify-between py-2 px-4'>
               <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} refelement={refNewPassword} className='bg-transparent grow' type='password'  placeholder='New Passwod' name='newPassword' />
               <FontAwesomeIcon onClick={() => handleEyePassword(refNewPassword)} icon= {eyeStatusNew == 'faEye' ? faEye : faEyeSlash} className="text-dark cursor-pointer w-[25px] h-[25px]" />
             </div>
             <span className='text-red-500 font-inter font-medium'>{formik.touched.newPassword && formik.errors.newPassword ? formik.errors.newPassword : null}</span>
 
-            <div className='bg-secondary rounded overflow-hidden flex items-center justify-between py-2 px-4'>
+            <div className='style-glass rounded overflow-hidden flex items-center justify-between py-2 px-4'>
               <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} refelement={refConfirmPassword} className='bg-transparent grow' type='password'  placeholder='Confirm New Passwod' name='confirmPassword' />
               <FontAwesomeIcon onClick={() => handleEyePassword(refConfirmPassword)} icon= {eyeStatusConfirm == 'faEye' ? faEye : faEyeSlash} className="text-dark cursor-pointer w-[25px] h-[25px]" />
             </div>

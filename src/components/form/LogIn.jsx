@@ -61,13 +61,13 @@ const LogIn = () => {
       {loading ? <Loading /> : null}
       <Form className='sign-up-form md:max-w-[350px] gap-5 pt-5 p-2' onSubmit={formik.handleSubmit}>
         <div className='flex flex-col gap-2'>
-          <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} type='text' placeholder='Email' className="border-b pb-1" name='emailUser'/>
+          <InputAccount onChange={formik.handleChange} onBlur={formik.handleBlur} type='text' placeholder='Email' className="border-b p-1 style-glass" name='emailUser'/>
           <span className='text-red-500 font-inter font-medium'>{formik.touched.emailUser && formik.errors.emailUser ? formik.errors.emailUser : null}</span>
         </div>
 
         <div className='flex flex-col gap-2'>
-          <div className="border-b pb-1 pr-5 flex items-center justify-between gap-2">
-            <InputAccount refelement={refPassword} className='grow' onChange={formik.handleChange} onBlur={formik.handleBlur} type='password' placeholder='Password' name='passwordUser'/>
+          <div className="pb-1 pr-5 flex items-center justify-between gap-2">
+            <InputAccount refelement={refPassword} className='grow p-1 style-glass' onChange={formik.handleChange} onBlur={formik.handleBlur} type='password' placeholder='Password' name='passwordUser'/>
             <FontAwesomeIcon onClick={handleEyePassword} icon= {eyeStatus == 'faEye' ? faEye : faEyeSlash} className="text-dark cursor-pointer" />
           </div>
           <span className='text-red-500 font-inter font-medium'>{formik.touched.passwordUser && formik.errors.passwordUser ? formik.errors.passwordUser : null}</span>

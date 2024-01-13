@@ -2,7 +2,7 @@
 const Contact = () => {
   return (
     <div className="contact container pt-6 mx-auto px-4 flex flex-wrap justify-center gap-6">
-      <div className="shadow-md rounded-md p-6">
+      <div className="call-us shadow-md rounded-md p-6">
         <div className="call-to-us flex flex-col gap-4 pb-5 border-b">
           <div className="flex flex-row items-center gap-3">
             <img src="/imgs/call-to-us.svg" alt="img" />

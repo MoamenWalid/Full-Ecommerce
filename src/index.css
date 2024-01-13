@@ -4,9 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #fcfcfc;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  box-shadow: -500px 0 600px 500px #ebc89d30, 752px -100px 600px 250px #ecaeaf4b, 251px 0 600px 250px #00d0ff1f;
+  z-index: -1;
+}
+
+body::before {
+  right: 600px;
+  top: 700;
+}
+
+body::after {
+  left: 300px;
+  top: 40%;
 }
 
 #root {
@@ -44,7 +66,7 @@ a.nav-sidebar.active {
 }
 
 svg.heart-icon {
-  color: #7777773b;
+  color: #d542432b;
 }
 
 svg.heart-icon.active,
@@ -73,9 +95,22 @@ ul.description {
   list-style: inside;
 }
 
+footer {
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  box-shadow: -800px -17px 600px 300px #ebc89d54, 40px -300px 600px 200px #ffb4b547;
+  z-index: -1;
+  bottom: 0;
+  right: 20%;
+}
+
 .footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .categories,
@@ -84,5 +119,20 @@ ul.description {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-
-
+/* Style Glass */
+.product,
+.cat-link,
+.search,
+footer,
+.contact .call-us,
+.contact .form,
+.contact .form input,
+.contact .form textarea,
+.abouting .box,
+.style-glass {
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

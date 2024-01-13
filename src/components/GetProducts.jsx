@@ -4,6 +4,7 @@ import { convertPrice } from "./convertPrice";
 import Slider from "./Slider";
 import { useDispatch, useSelector } from "react-redux";
 import { byType } from "../store/slices/userSlice";
+import { ClipLoader } from "react-spinners";
 
 // eslint-disable-next-line react/prop-types
 const GetProducts = ({ type, size, numOfPage }) => {
@@ -54,7 +55,7 @@ const GetProducts = ({ type, size, numOfPage }) => {
           }
         </div>
       :
-      <p>Loading...</p>}
+      <p className="flex gap-1 items-center text-[24px]">L <ClipLoader color="#DB4444" size={18} cssOverride={{}} loading speedMultiplier={1} /> ding</p>}
 
       {Math.ceil(productsByType.length / sizeOfPage) > 1 && !size && numOfPage <= Math.ceil(productsByType.length / sizeOfPage) ? <Slider size={productsByType.length ? productsByType.length : 0} sizeOfPage={sizeOfPage} /> : null}
     </>

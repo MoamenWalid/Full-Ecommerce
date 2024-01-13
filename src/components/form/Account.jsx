@@ -10,7 +10,7 @@ const Account = ({ heading, statusUser }) => {
           <img src="/imgs/shopping.jpg" alt="imgShop" />
         </div>
   
-        <div className={`account-${statusUser} w-full md:w-[40%]`}>
+        <div className={`accounting-form w-full md:w-[40%]`}>
           <h1 className="font-inter text-[30px] sm:text-[27px] md:text-[29px] font-medium tracking-[1.44px] leading-8 pb-6">{heading}</h1>
           <p className="font-normal leading-6 text-base">Enter your details below</p>
   

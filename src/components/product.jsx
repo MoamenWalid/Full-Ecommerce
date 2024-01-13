@@ -59,16 +59,16 @@ const Product = ({ item, img, sale, title, beforeSale, afterSale }) => {
 
   const variants = {
     hidden: {y: '100%', opacity: 0},
-    hover: {y: 0, opacity: 1}
+    h : {y: 0, opacity: 1}
   }
 
   return (
     <div className='flex max-w-[262px] flex-col gap-3'>
-      <motion.div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} className="relative overflow-hidden photo p-12 px-14 bg-[#fdf9f9] rounded-md w-fit">
+      <motion.div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} className="product relative overflow-hidden photo p-12 px-14 rounded-[10px] w-fit">
         <Link to={`/products/${item.cat}/${item.id}`}><img src={img} className="max-w-[150px]" alt="img" /></Link>
         {+sale ? <span className="absolute top-2 left-2 sale bg-button2 rounded p-1 px-2 font-thin text-sm text-white">-{sale}%</span> : null}
         
-        <FontAwesomeIcon ref={refIcon} onClick={onClickHeart} icon={faHeart} className={`heart-icon absolute top-2 right-2 bg-white p-2 w-[20px] h-[20px] rounded-[50%] cursor-pointer`}></FontAwesomeIcon>
+        <FontAwesomeIcon ref={refIcon} onClick={onClickHeart} icon={faHeart} className={`heart-icon absolute top-2 right-2 p-2 w-[20px] h-[20px] rounded-[50%] cursor-pointer`}></FontAwesomeIcon>
         
         <motion.button ref={refText} onClick={onClickAddToCart} variants={variants} animate={isHovered ? 'hover' : 'hidden'} className="bg-black text-white absolute bottom-0 left-0 w-full p-2 font-light font-inter tracking-[1.92px]">Add To Cart</motion.button>
       </motion.div>

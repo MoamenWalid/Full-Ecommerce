@@ -19,8 +19,8 @@ const Quantity = ({ item, minCounter }) => {
 
   return (
     <div className="quantity flex flex-row h-[32px] w-fit">
-      <div onClick={minusFunc} className="minus cursor-pointer w-[40px] flex items-center justify-center border text-white"><img src="/imgs/icon-minus.svg" alt="img" /></div>
-      <div ref={refCounter} className="counter border-t border-b w-[53px] font-inter text-[20px] font-semibold flex items-center justify-center select-none">{item.counter}</div>
+      <div onClick={minusFunc} className="minus style-glass cursor-pointer w-[40px] flex items-center justify-center text-white"><img src="/imgs/icon-minus.svg" alt="img" /></div>
+      <div ref={refCounter} className="counter style-glass w-[53px] font-inter text-[20px] font-semibold flex items-center justify-center select-none">{item.counter}</div>
       <div onClick={plusFunc} className="plus cursor-pointer w-[40px] flex items-center justify-center bg-button2 text-white"><img src="/imgs/icon-plus.svg" alt="img" /></div>
     </div>
   );

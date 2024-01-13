@@ -3,28 +3,31 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import parse from 'html-react-parser';
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import urlFetching from "../../../url/url";
 
-
 const Search = ({ show }) => {
   const [productsSearch, setProductsSearch] = useState([]);
+  const [data, setData] = useState([]);
   const ref = useRef();
   const refDivs = useRef();
   const refUp = useRef();
 
-  async function onChangeFunc() {
+  useEffect(() => {
+    axios.get(urlFetching('products')).then(({ data }) => setData(data));
+  }, [])
+
+  async function onChangeFunc(value) {
     setProductsSearch([]);
-    const { data } = await axios.get(urlFetching('products'));
     for(const key in data[0]) {
-      data[0][key].map(item => item.title.toLowerCase().includes(ref.current.value.toLowerCase().trim()) ? setProductsSearch(prev => [...prev, item]) : false);
+      data[0][key].map(item => item.title.toLowerCase().includes(value.toLowerCase().trim()) ? setProductsSearch(prev => [...prev, item]) : false);
     }
   }
 
   return (
-    <div ref={refUp} onClick={() => refDivs.current ? refDivs.current.style.display = 'flex' : false} className= {`search relative bg-secondary py-[7px] pl-[20px] pr-[12px] gap-4 justify-between items-center rounded ${show}`}>
-      <input onBlur={() => refDivs.current ? setTimeout(() => refDivs.current.style.display = 'none', 100) : false} ref={ref} autoComplete="off" onChange={() => ref.current.value.trim().length !== 0 ? onChangeFunc() : setProductsSearch([])} type="text" name="search" className="bg-transparent grow min-w-[160px] text-[12px] text-dark" placeholder="What Are You Looking For?" />
+    <div ref={refUp} onClick={() => refDivs.current ? refDivs.current.style.display = 'flex' : false} className= {`search relative py-[7px] pl-[20px] pr-[12px] gap-4 justify-between items-center rounded ${show}`}>
+      <input onBlur={() => refDivs.current ? setTimeout(() => refDivs.current.style.display = 'none', 100) : false} ref={ref} autoComplete="off" onChange={() => ref.current.value.trim().length !== 0 ? onChangeFunc(ref.current.value) : setProductsSearch([])} type="text" name="search" className="bg-transparent grow min-w-[160px] text-[12px] text-dark" placeholder="What Are You Looking For?" />
       <FontAwesomeIcon onClick={() => ref.current.focus()} icon= {faMagnifyingGlass} className="text-dark cursor-pointer"/>
 
       {productsSearch.length > 0 && 

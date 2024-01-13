@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       <div className="abouting gap-2 mt-9 ">
-        <div className="flex items-center justify-center gap-2 flex-col border rounded p-4">
+        <div className="box flex items-center justify-center gap-2 flex-col border rounded p-4">
           <div className="photo flex items-center justify-center bg-black w-[60px] h-[60px] rounded-full"><img src="/imgs/group.svg" alt="img" /></div>
           <span className="block font-inter font-semibold text-[19px]">10.5k</span>
           <p className="font-extralight text-center text-[14px]">Sallers active our site</p>
@@ -27,13 +27,13 @@ const About = () => {
           <p className="font-extralight text-center text-[14px]">Mopnthly Produduct Sale</p>
         </div>
 
-        <div className="flex items-center justify-center gap-2 flex-col border rounded p-4">
+        <div className="box flex items-center justify-center gap-2 flex-col border rounded p-4">
           <div className="photo flex items-center justify-center bg-black w-[60px] h-[60px] rounded-full"><img src="/imgs/shopping-bag.svg" alt="img" /></div>
           <span className="block font-inter font-semibold text-[19px]">45.5k</span>
           <p className="font-extralight text-center text-[14px]">Customer active in our site</p>
         </div>
 
-        <div className="flex items-center justify-center gap-2 flex-col border rounded p-4">
+        <div className="box flex items-center justify-center gap-2 flex-col border rounded p-4">
           <div className="photo flex items-center justify-center bg-black w-[60px] h-[60px] rounded-full"><img src="/imgs/money.svg" alt="img" /></div>
           <span className="block font-inter font-semibold text-[19px]">25k</span>
           <p className="font-extralight text-center text-[14px]">Anual gross sale in our site</p>
